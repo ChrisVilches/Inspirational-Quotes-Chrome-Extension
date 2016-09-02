@@ -88,6 +88,8 @@ function add(o, callback) {
 	var tx = db.transaction(["quote"], "readwrite");
 	var store = tx.objectStore("quote");
 
+	if(callback == null) callback = function(a){ /* nothing */ };
+
 	if(o.quote_content == null || o.quote_content == "" || o.quote_content == undefined || o.quote_content.length == 0){
 		callback("Quote can't be empty.");
 		return;

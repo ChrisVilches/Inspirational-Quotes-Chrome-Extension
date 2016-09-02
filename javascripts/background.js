@@ -119,6 +119,23 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse){
 
 
 
+// Manually export database
+function exportDatabase(){
+	findAll(function(response){
+		console.log(JSON.stringify(response));
+	});
+}
+
+// Manually import database
+function importDatabase(stringDatabase){
+	var amount = stringDatabase.length;
+	console.log("Importing " + amount + " items.");
+	if(amount == 0) return;
+	for(var i=0; i<amount; i++)
+		add(stringDatabase[i]);
+}
+
+
 
 (function(){
 
