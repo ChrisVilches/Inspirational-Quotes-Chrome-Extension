@@ -1,0 +1,142 @@
+body { width:500px; background-image: url(../img/mosaic.png); }
+* { font-size:15px;  font-family: helvetica, arial, "hiragino kaku gothic pro", meiryo, "ms pgothic", sans-serif; }
+
+a {
+	color: #767676;
+	text-decoration: none;
+}
+
+a.home{
+	background-image: url(../img/home.png);
+	padding: 10px 30px;
+	margin: 2px 0;
+	background-repeat: no-repeat;
+	background-position-y: 50%;
+	background-position-x: 0%;
+	background-size: 20px;
+}
+
+strong{
+	font-size: 18px;
+}
+
+div.logo{
+	width: 100px;
+	height: 100px;
+	background-image: url(../img/icon.png);
+	background-repeat: no-repeat;
+	margin: 10px 0;
+}
+
+div.logo_title{
+	background-image: url(../img/icon.png);
+	background-repeat: no-repeat;
+	height: 100px;
+	width: 100%;
+	padding-top: 5px;
+	margin-bottom: 10px;
+	padding-left: 130px;
+}
+
+input, textarea { 
+	padding: 5px;
+	width: 100%;
+	margin: 10px 0;
+}
+
+textarea {
+	height: 200px;
+	resize: vertical;
+}
+
+input:focus, textarea:focus {
+	background-color: #fafafa;
+}
+
+textarea.missing{
+	border: 2px solid #ff6666;
+}
+
+
+a.nav_button{
+	display: block;
+	text-align: center;
+	width: 100%;
+	padding: 10px 0;
+	margin: 2px 0;
+	background-color: rgba(220, 220, 220, 0.5);
+}
+
+a.nav_button:hover{
+	background-color: rgba(200, 200, 200, 0.5);	
+}
+
+a.settings{
+	background-image: url(../img/settings.png);
+}
+
+a.edit{
+	background-image: url(../img/edit.png);	
+}
+
+a.small_icon_navbar{
+	background-repeat: no-repeat;
+	background-position-y: 50%;
+	background-position-x: 30%; 
+	background-size: 15px; 
+}
+
+small{
+	color: #8a8a8a;
+}
+
+.padding_left{
+	padding-left: 20px;
+}
+
+button {
+	color: #ffffff;
+	border: 0;
+	padding: 10px 20px;
+	min-width: 100px;
+}
+
+button.primary { background-color: #00597C; }
+button.primary:hover { background-color: #3e7abf; }
+
+button.secondary { background-color: #aaaaaa; }
+button.secondary:hover { background-color: #888888; }
+
+input.mini {
+	width: 100px;
+}
+
+button.mini {
+	height: 20px;
+	min-width: 30px;
+	padding: 2px;
+	background-color: #aaaaaa;	
+	font-size: 13px;
+	color: white;
+}
+
+button.delete{
+	background-image: url(../img/delete.png);
+	background-repeat: no-repeat;
+	background-position-x: 50%;
+	background-position-y: 50%;
+	background-size: 20px;
+	min-width: 25px;
+	background-color: transparent;
+}
+
+table td {
+	vertical-align: top;
+	padding: 10px 5px;
+}
+
+
+/* Settings */
+.probability_container{
+	padding: 10px;
+}

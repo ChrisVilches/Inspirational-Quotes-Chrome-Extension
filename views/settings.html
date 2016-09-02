@@ -1,0 +1,42 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+</head>
+<body>
+
+	<div class="logo_title">
+		<p><strong>Settings</strong></p>	
+		<a href="add_quote.html" class="home">Back</a>
+	</div>
+
+
+
+	<div id="content">
+		<p>Probability of showing a quote when loading a new page:</p>
+
+
+		<!-- Edit using - and + buttons-->
+		<p id="buttons_probability_input">
+			<button class="mini" id="less">-</button>
+			<span class="probability_container">
+				<b id="probability">0</b> %
+			</span>
+			<button class="mini" id="plus">+</button>		
+			
+		</p>
+
+
+		<!-- Custom input -->
+		<p id="custom_probability_input" style="display:none;">
+			<input type="number" max="100" min="0" class="mini" id="custom_probability"> 
+			<small class="padding_left">Click here to save...</small>			
+		</p>
+
+
+	</div>	
+	
+	<script src="../vendor/jquery.js"></script>
+	<script src="../javascripts/settings.js"></script>
+</body>
+</html>

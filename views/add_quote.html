@@ -1,0 +1,43 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+</head>
+<body>
+
+	<center>
+		<a href="javascript:;" id="get_random_quote_btn">
+			<div class="logo"></div>
+		</a>
+	</center>
+
+	<!-- Form: add new quote-->
+
+	<form>
+		<textarea id="quote_content" placeholder="New quote content"></textarea>
+
+		<input type="text" id="quote_author" placeholder="Author">
+
+		<input type="text" id="quote_source" placeholder="Source (book, link, etc)">
+
+		<button class="primary" id="quote_ok_btn">OK</button>
+
+		<img src="../img/tick.png" style="display:none; float: right;" id="tick_image">
+	</form>
+
+	
+
+
+	
+
+	<!-- Nav menu -->
+
+	<a href="manage.html" class="nav_button edit small_icon_navbar">Manage quotes</a>
+	<a href="settings.html" class="nav_button settings small_icon_navbar">Settings</a>
+
+	
+
+	<script src="../vendor/jquery.js"></script>
+	<script src="../javascripts/add_quote.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+body{
+	background-image: url(../img/wood.jpg);
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#container{
+	padding: 10%;
+	margin: 10%;
+	background-color: black;
+	opacity: 0.9;
+	color: #dadada;
+	border-radius: 10px;
+}
+
+#quote_content{
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+#quote_author{
+	text-align: right;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+#quote_source{
+	text-align: right;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
