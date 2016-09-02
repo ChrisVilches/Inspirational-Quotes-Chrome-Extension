@@ -3,10 +3,12 @@ openDB();
 var quoteLoadPageProbability;
 
 
-
-
 // Shows a notification with a quote
 function notifyQuote(quote){
+
+	if(quote == null){
+		return;
+	}
 
 	var timestamp = quote.timestamp;
 	var content = quote.quote_content;
