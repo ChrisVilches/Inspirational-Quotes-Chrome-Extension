@@ -29,6 +29,8 @@ function showContent(){
 		},
 		function(response){
 
+			if(typeof response != "object") return;
+
 			var table = "";
 
 			// Render table
