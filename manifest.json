@@ -21,11 +21,6 @@
 		]
 	},
 
-	"permissions": ["notifications", "alarms"],
-
-	"content_scripts": [{
-	    "matches": ["<all_urls>"],
-	    "js": ["javascripts/inject.js"]
-    }]
+	"permissions": ["notifications", "alarms"]
 
 }

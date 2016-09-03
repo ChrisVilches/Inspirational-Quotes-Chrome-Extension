@@ -52,6 +52,24 @@ function setLoadPageProbability(p){
 }
 
 
+// Flip a coin, if true, show a quote
+function randomQuoteProbability(){
+	if(Math.random()*100 < quoteLoadPageProbability){
+		showRandomQuote(notifyQuote);
+	}
+}
+
+
+// Event: quote when a new tab is opened
+chrome.tabs.onCreated.addListener(randomQuoteProbability);
+
+// Event: quote when a tab is reloaded (or changes URL)
+chrome.tabs.onUpdated.addListener(function(tabid, changeinfo, tab) {
+	if (changeinfo.status == "complete") {
+		randomQuoteProbability();
+	}
+});
+
 // Get and respond to messages
 chrome.runtime.onMessage.addListener(function(message, sender, sendResponse){
 
@@ -95,12 +113,10 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse){
 			return true;
 		break;
 
-		// When the user loads a new page
+		// Not in use
 		case 7:
 
-			if(Math.random()*100 < quoteLoadPageProbability){
-				showRandomQuote(notifyQuote);
-			}			
+					
 		break;
 
 		// Change probability of showing a quote when loading a new page
